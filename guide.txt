@@ -5,5 +5,7 @@ Cosas a editar:
 
 configuration defaults
 	Agregar
-	EXTRA_IMAGE_FEATURES ?= 
-		
+	EXTRA_IMAGE_FEATURES ?= "dbg-pkgs src-pkgs dev-pkgs tools-sdk tools-debug"
+
+Agregar al final
+	DISTRO_FEATURES_append = "x11"	
