@@ -1,0 +1,9 @@
+Build->conf->local.conf
+
+Cosas a editar:
+	Machine ??= "zedboar-zynq7"
+
+configuration defaults
+	Agregar
+	EXTRA_IMAGE_FEATURES ?= 
+		
