@@ -12,14 +12,14 @@ Agregar al final
 
 2) Build->conf->bblayers.conf
 	BBLAYERS ?= " \
-  /home/daro/poky/meta \
-  /home/daro/poky/meta-poky \
-  /home/daro/poky/meta-yocto-bsp \
-  /home/daro/poky/meta-openembedded/meta-oe \
-  /home/daro/poky/meta-openembedded/meta-gnome \
-  /home/daro/poky/meta-openembedded/meta-xfce \
-  /home/daro/poky/meta-openembedded/meta-multimedia \
-  /home/daro/poky/meta-openembedded/meta-python \
-  /home/daro/poky/meta-openembedded/meta-networking \
-  /home/daro/poky/meta-xilinx/meta-xilinx-bsp \
+            	 /meta \
+  		 /meta-poky \
+	  	 /meta-yocto-bsp \
+		 /meta-openembedded/meta-oe \ 
+		 /meta-openembedded/meta-gnome \
+  		 /meta-openembedded/meta-xfce \
+  		 /meta-openembedded/meta-multimedia \
+ 		 /meta-openembedded/meta-python \
+  		 /meta-openembedded/meta-networking \
+		 /meta-xilinx/meta-xilinx-bsp \
   "
