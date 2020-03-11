@@ -1,7 +1,7 @@
 1) Build->conf->local.conf
 
 Cosas a editar:
-	MACHINE ?= "zedboar-zynq7"
+	MACHINE ?= "zedboard-zynq7"
 
 configuration defaults
 	Agregar
