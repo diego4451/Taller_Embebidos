@@ -2,7 +2,7 @@ boot.bin
 u-boot.img
 uImage
 zynq-zed.dtb
-zynq-zedboard-zynq7.dtb
+zynq-zed-zedboard-zynq7.dtb
 core-image-x11-.......cpio.gz.u-boot
 uEnv.txt
 
