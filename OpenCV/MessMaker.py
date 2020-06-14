@@ -7,18 +7,20 @@ Next = 'To/'
 
 while(True):
     img = cv2.imread(Current + str(i) + '.png', 1)    
-    if(not img.any()):               #Error Handling
-        print('Can\'t find file path:', str(i) + path)
-    else:
-        cv2.imshow('Image', img)     #Show Image
+    try:
+        img.any()
+        cv2.imshow('Image', img)    #Show Image
         os.system('mv ' + Current + str(i) + '.png ' + Next)    #Move file
 
-    if cv2.waitKey(1000)==27:        # Esc key to stop
+    except:                         #Error Handling
+        print('Can\'t find file path:', Current + str(i) + '.png')
+
+    if cv2.waitKey(1000)==27:       # Esc key to stop
         exit()
 
-    if(i == 10):                     #Loop through files
+    if(i == 10):                    #Loop through files
         i = 1
-        temp = Current               #Swap To/ and From/
+        temp = Current              #Swap To/ and From/
         Current = Next
         Next = temp
     else:
